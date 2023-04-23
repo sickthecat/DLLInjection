@@ -76,6 +76,3 @@ The program creates a remote thread in the target process using `CreateRemoteThr
 ```
 
 If the thread was successfully created, the program closes the handle to the remote thread, frees the allocated remote memory using `VirtualFreeEx`, closes the process handle, and returns a zero value to indicate success.
-
-In summary, the program injects a DLL into a remote process by allocating memory in the remote process, writing the DLL path to that memory, creating a remote thread in the process that calls `LoadLibraryW` with the DLL path as an argument, and waiting for the thread to finish. The program uses several Windows API functions to accomplish this, and includes error checking to handle potential failures at each step.
-
