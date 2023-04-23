@@ -3,7 +3,7 @@ DLL Injection refactored.
 
 # DLL Injection
 
-This program demonstrates how to inject a DLL into a remote process on Windows.
+This program demonstrates how to inject a DLL into a process on Windows.
 
 ## Prerequisites
 
